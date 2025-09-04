@@ -11,5 +11,6 @@ for root, dirs, files in os.walk("E:\\All_Code\\python练习题"):
         oldpath = os.path.join(root, file)
         if oldpath[-3:] == 'txt':
             newpath = oldpath.replace(oldpath[-3:], 'py')
-        os.rename(oldpath, newpath)
+            os.rename(oldpath, newpath)
         # 当文件已存在时，无法创建该文件。
+
